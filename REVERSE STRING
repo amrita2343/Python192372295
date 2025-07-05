@@ -1,0 +1,7 @@
+original = input("Enter a string: ")
+reversed_str = ""
+index = len(original) - 1
+while index >= 0:
+    reversed_str += original[index]
+    index -= 1
+print("Reversed string:", reversed_str)
