@@ -1,0 +1,7 @@
+filename = "output.txt"
+count = int(input("How many lines do you want to write? "))
+with open(filename, "w") as file:
+    for i in range(count):
+        line = input(f"Enter line {i+1}: ")
+        file.write(line + "\n")
+print(f"{count} lines written to {filename}")
